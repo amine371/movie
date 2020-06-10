@@ -1,0 +1,108 @@
+{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header .btn {
+    min-width: 220px;
+}
+
+header form .btn {
+    min-width: 40px;
+    vertical-align: sub;
+}
+
+header form input {
+    padding: 8px;
+   
+}
+
+
+
+label.btn {
+    vertical-align: middle;
+}
+
+.moviesContainer {
+    background: rgba(0,0,0,0.5);
+    width: 80%;
+    margin:50px auto;
+    padding: 50px;
+}
+
+select {
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    width: 20%;
+}
+
+.movie img {
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.movie h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rating {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+}
+.formGroup {
+    margin:10px 0px
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    border:1px solid #ccc;
+}
+
+small {
+    color: gray;
+    font-size: 11px;
+    display: inline-block;
+    margin-left: 5px;
+}
