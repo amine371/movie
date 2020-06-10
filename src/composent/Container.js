@@ -49,16 +49,7 @@ const Container = () => {
         setRating('');
         setYear('');
     }
-    const customStyles = {
-        content: {
-            width: '40%',
-            top: '40%',
-            left: '40%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)'
-        }
+    
     };
     const addMovie = (e) => {
         e.preventDefault();
