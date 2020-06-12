@@ -1,13 +1,16 @@
 import react from "react";
-import Movie from "./Movie.js";
+import MovieCard from './MovieCard/MovieCard';
 
-const list=props=>{
-    const MoviesArray =props.movies;
-    const moviesItems=MoviesArray.map((item)=>
-    <Movie{..item}/>
+const MoviesList = ({ moviesData, ratingSearch, nameSearch }) => {
     );
     return(
-        <div className="list">{moviesItems</div>
-    );
-}
-export default List;
+{moviesData
+        .filter(
+          (el) =>
+            el.rating >= ratingSearch &&
+            el.name.toLowerCase().includes(nameSearch.toLowerCase().trim())
+        )
+        .map((el, i) => (
+          <MovieCard key={i} movie={el} />
+        ))}
+export default MoviesList;
