@@ -1,7 +1,7 @@
 import react from "react";
 import MovieCard from './MovieCard/MovieCard';
 
-const MoviesList = ({ moviesData, ratingSearch, nameSearch }) => {
+const List = ({ moviesData, ratingSearch, nameSearch }) => {
     );
     return(
 {moviesData
@@ -13,4 +13,4 @@ const MoviesList = ({ moviesData, ratingSearch, nameSearch }) => {
         .map((el, i) => (
           <MovieCard key={i} movie={el} />
         ))}
-export default MoviesList;
+export default List;
