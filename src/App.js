@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
-import { moviesData } from "./Components/moviesData";
+import {Container } from "./Components/Container";
 import Search from "./Components/SearchMovie/Search";
-import MoviesList from "./Components/MoviesList";
-import AddMovie from "./Components/AddMovie/AddMovie";
-
+import List from "./Components/List";
 import "./App.css";
 
 function App() {
-  const [moviesList, setMoviesList] = useState(moviesData);
+  const [List, setList] = useState(Container);
   const [name, setName] = useState("");
   const [rating, setRating] = useState("");
   const [image, setImage] = useState("");
@@ -26,7 +24,7 @@ function App() {
       date: date,
       description: description
     };
-    return setMoviesList([...moviesList, newMovie]);
+    return setList([...List, newMovie]);
   };
 
   return (
@@ -36,8 +34,8 @@ function App() {
         setRatingSearch={setRatingSearch}
         ratingSearch={ratingSearch}
       />
-      <MoviesList
-        moviesData={moviesList}
+      <List
+        Container={List}
         nameSearch={nameSearch}
         ratingSearch={ratingSearch}
       />
